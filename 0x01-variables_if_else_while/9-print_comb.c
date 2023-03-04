@@ -1,15 +1,16 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
- * main - Prints numbers between 0 to 9 with commas and spaces.
- *
- * Return: Always 0 (Success)
- */
+* main - Prints all possible combinations of a single digit number.
+*
+* Return: Always 0 (Success)
+*/
 int main(void)
 {
-	int i;
+	int i = 48;
 
-	for (i = 48; i < 58; i++)
+	while (i < 58)
 	{
 		putchar(i);
 		if (i != 57)
@@ -17,6 +18,7 @@ int main(void)
 			putchar(',');
 			putchar(' ');
 		}
+		i++;
 	}
 	putchar('\n');
 	return (0);
