@@ -1,21 +1,25 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
- * main - Prints numbers between 0 to 9 and letters between a to f.
- *
- * Return: Always 0 (Success)
- */
+* main - Prints base numbers of Hexadecimal System
+*
+* Return: Always 0 (Success)
+*/
 int main(void)
 {
-	int i;
+	int i = 48;
 
-	for (i = 48; i < 58; i++)
+	while (i < 58)
 	{
 		putchar(i);
+		i++;
 	}
-	for (i = 97; i < 103; i++)
+	i = 97;
+	while (i < 103)
 	{
 		putchar(i);
+		i++;
 	}
 	putchar('\n');
 	return (0);
