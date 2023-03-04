@@ -1,17 +1,19 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
- * main - Prints reversed alphabet.
- *
- * Return: Always 0 (Success)
- */
+* main - Prints the alphabet in reversed order.
+*
+* Return: Always 0 (Success)
+*/
 int main(void)
 {
-	int i;
+	int i = 122;
 
-	for (i = 122; i > 96; i--)
+	while (i != 96)
 	{
 		putchar(i);
+		i--;
 	}
 	putchar('\n');
 	return (0);
